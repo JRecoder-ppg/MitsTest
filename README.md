@@ -5,7 +5,7 @@
    This command will create the table(s) on Postgres DB (inside test schema)
 
 
-  ** Now you can run the project and some Endpoint are available to Add Culture Code, and some GET functions**
+  **Now you can run the project and some Endpoint are available to Add Culture Code, and some GET functions**
 
 # Code First Commands
 
