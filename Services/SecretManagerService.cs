@@ -22,7 +22,7 @@ namespace MitsTest.Services
                 string awsAccessKeyId = string.Empty;
                 string awsSecretAccessKey = string.Empty;
                 string awsSessionToken = string.Empty;
-                string profileName = "DevEnv-PPG_Developer_ReadWrite-851725255026";
+                string profileName = "your-profile-aws-name";
 
                 var sharedFile = new SharedCredentialsFile();
                 if (sharedFile.TryGetProfile(profileName, out var profile))
