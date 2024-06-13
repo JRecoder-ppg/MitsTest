@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "ccd47da6-af8e-430f-9151-aa04215ca489",
+		"name": "MITS Next Gen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36254054"
+	},
+	"item": [
+		{
+			"name": "Culture Codes",
+			"item": [
+				{
+					"name": "Get All Culture Codes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}CultureCode/GetCultureCodes",
+							"host": [
+								"{{BASE_URL}}CultureCode"
+							],
+							"path": [
+								"GetCultureCodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Culture Code By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}CultureCode/GetCultureCodeById/1",
+							"host": [
+								"{{BASE_URL}}CultureCode"
+							],
+							"path": [
+								"GetCultureCodeById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Culture Codes By Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}CultureCode/GetCultureCodeByName?name=Fr",
+							"host": [
+								"{{BASE_URL}}CultureCode"
+							],
+							"path": [
+								"GetCultureCodeByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Fr"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Culture Code",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"French (France)\",\r\n  \"cultureCode\": \"fr-FR\",\r\n  \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}CultureCode/AddCultureCode",
+							"host": [
+								"{{BASE_URL}}CultureCode"
+							],
+							"path": [
+								"AddCultureCode"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
